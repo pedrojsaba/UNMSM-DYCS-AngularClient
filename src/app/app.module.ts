@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { MatButtonModule, MatCheckboxModule,
   MatToolbarModule,  MatSidenavModule, MatIconModule,
   MatListModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
@@ -17,6 +20,9 @@ import { app_routing } from './app.routes';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
+    HttpClientModule,
     MatButtonModule,
     MatCheckboxModule,
     MatToolbarModule,
