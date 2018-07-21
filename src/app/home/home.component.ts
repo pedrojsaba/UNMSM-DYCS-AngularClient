@@ -24,7 +24,6 @@ export class HomeComponent implements OnInit {
   getClaims(): AppUserClaim[] {
     const claims: Array<AppUserClaim> = Array();
     const token = localStorage.getItem('bearerToken');
-
     if (token == null) {
         return [];
     }
