@@ -33,7 +33,8 @@ export class SecurityService {
           pipe(
             tap(resp => {
               Object.assign(this.securityObject, resp);
-              localStorage.setItem('bearerToken', this.securityObject.bearerToken);
+              localStorage.setItem('bearerToken', this.securityObject.bearToken);
+              console.log(this.getClaims());
             })
           );
     }

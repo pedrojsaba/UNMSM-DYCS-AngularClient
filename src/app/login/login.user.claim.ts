@@ -1,6 +1,6 @@
 export class AppUserClaim  {
     id = '';
-    userId = '';
+    user = '';
     type = '';
     value = '';
     constructor(type: string, value: string) {
