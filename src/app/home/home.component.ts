@@ -16,9 +16,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.claims = this.getClaims();
-    if (this.claims==[]){
-      this.router.navigateByUrl('login');
-    }
+   // if (this.claims==[]){
+   //   this.router.navigateByUrl('login');
+   // }
   }
 
   getClaims(): AppUserClaim[] {
